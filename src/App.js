@@ -83,7 +83,7 @@ function App() {
         <h2 className='text-[18px] mb-8 font-bold'>Preview</h2>
         <DynamicForm
           schema={schema.schema}
-          showSubmitBtn={true}
+          showSubmitBtn={false}
           btnText={"SUBMIT"}
           uiSchema={schema.form ? schema.form : []}
           preData={{}}
