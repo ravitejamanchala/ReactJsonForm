@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactJsonForm/static/css/main.f855e6bc.css",
-    "main.js": "/ReactJsonForm/static/js/main.aa4cfb6e.js",
+    "main.css": "/ReactJsonForm/static/css/main.e6c13ad2.css",
+    "main.js": "/ReactJsonForm/static/js/main.da4e2c24.js",
     "static/js/453.92e4eab8.chunk.js": "/ReactJsonForm/static/js/453.92e4eab8.chunk.js",
-    "static/media/logo.svg": "/ReactJsonForm/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ReactJsonForm/index.html",
-    "main.f855e6bc.css.map": "/ReactJsonForm/static/css/main.f855e6bc.css.map",
-    "main.aa4cfb6e.js.map": "/ReactJsonForm/static/js/main.aa4cfb6e.js.map",
+    "main.e6c13ad2.css.map": "/ReactJsonForm/static/css/main.e6c13ad2.css.map",
+    "main.da4e2c24.js.map": "/ReactJsonForm/static/js/main.da4e2c24.js.map",
     "453.92e4eab8.chunk.js.map": "/ReactJsonForm/static/js/453.92e4eab8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.aa4cfb6e.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.da4e2c24.js"
   ]
 }
