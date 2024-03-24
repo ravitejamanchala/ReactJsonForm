@@ -3,15 +3,15 @@ import { useState } from 'react';
 import './App.css';
 import DynamicForm from './POC/DynamicForm';
 import { Editor } from '@monaco-editor/react';
+import Navbar from './Components/Navbar';
 
 function App() {
   const [schema, setSchema] = useState({
     "schema": {
       "name": {
-        "title": "Mandatory",
-        "description": "This must be completed",
-        "type": "string",
-        "required": true
+        "title": "Name",
+        "description": "Nickname allowed",
+        "type": "string"
       },
       "menu": {
         "type": "array",
@@ -26,28 +26,28 @@ function App() {
             "dessert"
           ]
         }
+      },
+      "comment": {
+        "type": "textarea",
+        "title": "Comment"
+      },
+      "age": {
+        "type": "number",
+        "title": "Age",
+        "description": "Your Age"
+      },
+      "gender": {
+        "title": "Gender",
+        "description": "Your gender",
+        "type": "string",
+        "enum": [
+          "male",
+          "female",
+          "alien"
+        ]
       }
     },
-    "form": [
-      // Uncommented form configuration
-      // {
-      //   "key": "field"
-      // },
-      // {
-      //   "type": "submit",
-      //   "title": "Submit"
-      // },
-      // {
-      //   "key": "menu",
-      //   "type": "checkboxes",
-      //   "titleMap": {
-      //     "starter": "Starter would be great",
-      //     "maincourse": "No way I'll skip the main course",
-      //     "cheese": "Cheddar rules!",
-      //     "dessert": "Thumbs up for a dessert"
-      //   }
-      // }
-    ]
+    "form": []
   });
   //  const [schemaTextarea, setSchemaTextarea] = useState()
   const handleSchemaChange = (value) => {
@@ -62,10 +62,11 @@ function App() {
     }
   };
   return (
-    <div className="flex p-6">
+    <div className="flex px-8 pt-24 max-w-screen-xl  mx-auto">
+      <Navbar/>
       <div
         id="content"
-        className="w-1/2 bg-blue-200"
+        className="w-1/2 h-[100vh]"
       >
 
         <Editor
@@ -77,11 +78,12 @@ function App() {
       </div>
       <div
         id="content"
-        className="w-1/3 bg-blue-200"
-      >
+        className="w-1/4 p-10"
+      >  
+        <h2 className='text-[18px] mb-8 font-bold'>Preview</h2>
         <DynamicForm
           schema={schema.schema}
-          showSubmitBtn={false}
+          showSubmitBtn={true}
           btnText={"SUBMIT"}
           uiSchema={schema.form ? schema.form : []}
           preData={{}}
