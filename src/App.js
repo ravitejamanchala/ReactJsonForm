@@ -66,7 +66,7 @@ function App() {
       <Navbar/>
       <div
         id="content"
-        className="w-1/2 h-[100vh]"
+        className="w-1/2 h-[90vh]"
       >
 
         <Editor
